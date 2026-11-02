@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Медичне Золото — витончена біжутерія на кожен день.">
+<title>Медичне Золото — прикраси з характером</title>
+<style>
+:root{--ink:#25211d;--muted:#82796e;--gold:#b18a45;--gold2:#d8bd83;--cream:#f8f5ef;--paper:#fffefa;--line:#e9e1d4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.topline{background:#29241e;color:#f6eddb;text-align:center;padding:9px 14px;font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}.topline a{color:#f5d99c;text-decoration:underline;text-underline-offset:3px;font-weight:bold;white-space:nowrap}.topline-extra{opacity:.85}.header{position:sticky;top:0;z-index:10;background:#fffefaed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{max-width:1200px;margin:auto;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:22px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:var(--ink);white-space:nowrap}.brand span{color:var(--gold)}.links{display:flex;gap:27px}.links a{color:#554d43;text-decoration:none;font:12px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase}.telegram-top{display:inline-block;background:linear-gradient(135deg,#c49a4d,#9b702d);color:white;text-decoration:none;padding:11px 15px;font:10px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}.cartbtn{border:1px solid var(--gold);background:transparent;padding:10px 15px;color:var(--ink);font:12px Arial,sans-serif;letter-spacing:1px}.cartcount{color:var(--gold);font-weight:bold}.hero{background:linear-gradient(110deg,#f2ede4 0%,#f7f3eb 52%,#e8ddc9 100%);min-height:510px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;overflow:hidden}.hero-copy{padding:70px max(24px,calc((100vw - 1150px)/2));padding-right:30px}.eyebrow{font:11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:20px}.hero h1{font-size:clamp(42px,5vw,70px);line-height:1.04;font-weight:normal;margin:0 0 22px;max-width:620px}.hero p{font:15px/1.8 Arial,sans-serif;color:#70675c;max-width:430px;margin:0 0 30px}.primary{display:inline-block;background:var(--ink);color:white;border:0;padding:16px 25px;text-decoration:none;font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}.hero-art{height:510px;position:relative;display:grid;place-items:center}.orb{width:min(78%,440px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff9e9,#d9c7a5 60%,#b59a6d);box-shadow:0 25px 70px #7a634533;display:grid;place-items:center}.necklace{width:65%;height:75%;border:3px solid #b18a45;border-top-color:transparent;border-radius:0 0 50% 50%;position:relative;transform:translateY(-12px);filter:drop-shadow(2px 5px 4px #80602d55)}.pendant{position:absolute;bottom:-12px;left:50%;transform:translateX(-50%) rotate(45deg);width:35px;height:35px;border:2px solid #a77c34;background:linear-gradient(135deg,#fff0ba,#bd9146);box-shadow:0 4px 9px #80602d55}.spark{position:absolute;color:#fff9e9;font-size:28px}.spark.one{top:18%;right:18%}.spark.two{bottom:22%;left:14%;font-size:19px}.hero-banner{width:100%;background:#f8f1e4;overflow:hidden;line-height:0}
+.hero-banner a{display:block}
+.hero-banner img{display:block;width:100%;height:auto;max-height:900px;object-fit:contain;margin:0 auto}
+@media(max-width:650px){.hero-banner img{width:100%;height:auto;max-height:none}}
+.section{max-width:1200px;margin:auto;padding:76px 24px}.section-head{text-align:center;margin-bottom:36px}.section-head .eyebrow{margin-bottom:12px}.section h2{font-size:38px;font-weight:normal;margin:0}.intro{font:14px/1.7 Arial,sans-serif;color:var(--muted);margin:13px auto 0;max-width:520px}.categories{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:28px 0 34px}.chip{border:1px solid var(--line);background:transparent;padding:10px 17px;color:#6d6255;font:11px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase}.chip.active,.chip:hover{background:var(--ink);color:white;border-color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.product{border:1px solid var(--line);background:white;transition:.25s}.product:hover{transform:translateY(-4px);box-shadow:0 15px 35px #4b3b2410}.product-art{height:230px;background:linear-gradient(145deg,#f6f1e8,#e9dfce);display:grid;place-items:center;position:relative;overflow:hidden}.product-art:before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:#fff9;filter:blur(1px)}.jewel{position:relative;z-index:1;width:94px;height:120px;border:3px solid #b18a45;border-radius:50%;filter:drop-shadow(2px 5px 3px #7a5d2e44)}.jewel.ear{width:55px;height:75px;border-radius:50% 50% 48% 48%;border-width:3px}.jewel.ring{width:90px;height:90px;border-radius:50%;border-width:9px;border-color:#bd984f;transform:rotate(-18deg)}.jewel.bracelet{width:135px;height:135px;border-radius:50%;border-width:5px}.jewel .stone{position:absolute;width:17px;height:17px;background:linear-gradient(135deg,#fff6d7,#c6a15b);border:1px solid #a17b39;transform:rotate(45deg);left:50%;bottom:-7px;margin-left:-8px}.product-photo{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;padding:8px;background:#f7f5f1}.tag{position:absolute;top:13px;left:13px;background:#fffefa;color:var(--gold);padding:6px 9px;font:9px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;z-index:2}.product-info{padding:17px}.product-info h3{font-size:17px;font-weight:normal;margin:0 0 8px}.product-info p{font:11px Arial,sans-serif;color:var(--muted);margin:0 0 14px}.product-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px}.price{font:15px Arial,sans-serif}.add{background:transparent;border:1px solid var(--gold);color:#8d6c32;padding:9px 11px;font:10px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase}.add:hover{background:var(--gold);color:white}.features{background:var(--cream);display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding:43px max(24px,calc((100vw - 1100px)/2));text-align:center}.feature .symbol{font-size:25px;color:var(--gold)}.feature h3{font-size:17px;font-weight:normal;margin:12px 0 7px}.feature p{font:12px/1.6 Arial,sans-serif;color:var(--muted);margin:0}.about{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-art{min-height:330px;background:linear-gradient(145deg,#eee5d6,#d6c4a4);display:grid;place-items:center}.about-art .big-ring{width:185px;height:185px;border:12px solid #b28b48;border-radius:50%;box-shadow:inset 0 0 15px #fff8,0 10px 25px #6c512e44;transform:rotate(-20deg)}.about h2{font-size:39px;font-weight:normal;line-height:1.15}.about p{font:14px/1.9 Arial,sans-serif;color:var(--muted)}.footer{background:#29241e;color:#f6eddb;padding:45px 24px;text-align:center}.footer .brand{color:#fff}.footer p{font:12px/1.7 Arial,sans-serif;color:#c9bdab}.footer small{color:#a99b87;font:10px Arial,sans-serif}.overlay{display:none;position:fixed;inset:0;background:#0007;z-index:30}.overlay.open{display:block}.drawer{position:absolute;right:0;top:0;height:100%;width:min(460px,100%);background:var(--paper);padding:25px;overflow:auto}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px}.drawer h2{font-weight:normal}.close{border:0;background:none;font-size:25px}.cart-item{display:flex;justify-content:space-between;gap:15px;padding:17px 0;border-bottom:1px solid var(--line);font:13px Arial,sans-serif}.cart-item button{border:0;background:none;color:#9b6c3b}.total{display:flex;justify-content:space-between;padding:20px 0;font:16px Arial,sans-serif}.checkout{width:100%;border:0;background:var(--ink);color:white;padding:15px;font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}.form{display:none;margin-top:20px}.form.show{display:block}.form label{display:block;font:11px Arial,sans-serif;color:var(--muted);margin:12px 0 5px}.form input,.form textarea{width:100%;border:1px solid var(--line);padding:12px;background:white;font:13px Arial,sans-serif}.form textarea{min-height:75px}.notice{font:11px/1.6 Arial,sans-serif;color:var(--muted);margin-top:12px}.empty{font:14px Arial,sans-serif;color:var(--muted);padding:30px 0}
+.telegram-link{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#c49a4d,#9b702d);color:#fff;text-decoration:none;padding:13px 20px;border-radius:2px;font:11px Arial,sans-serif;letter-spacing:1.4px;text-transform:uppercase;box-shadow:0 7px 18px #9b702d22}
+.telegram-link:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.contact-note{font:12px/1.7 Arial,sans-serif;color:#c9bdab;margin:12px auto;max-width:560px}
+.order-telegram{display:none;width:100%;margin-top:12px;text-align:center;justify-content:center}
+
+@media(max-width:850px){.links{display:none}.telegram-top{font-size:9px;padding:10px 9px;letter-spacing:.4px}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 25px 20px}.hero-art{height:340px}.orb{width:280px}.grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:30px}.features{grid-template-columns:1fr;gap:30px}.section{padding:55px 18px}}
+@media(max-width:460px){.brand{font-size:14px}.telegram-top{font-size:8px;padding:9px 7px;max-width:118px;white-space:normal;text-align:center;line-height:1.25}.nav{padding:14px}.cartbtn{padding:9px}.grid{gap:10px}.product-art{height:165px}.product-info{padding:12px}.product-info h3{font-size:15px}.add{padding:8px 7px;font-size:9px}.hero h1{font-size:44px}.section h2{font-size:31px}}
+
+/* Відео прикрас */
+.video-hero{background:linear-gradient(115deg,#29241e,#4a3b2b);color:#fff8ec;padding:34px 24px}
+.video-hero-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:minmax(240px, .9fr) 1.1fr;align-items:center;gap:52px}
+.video-hero-media{height:490px;display:flex;justify-content:center;align-items:center;overflow:hidden}
+.video-hero-media video{height:100%;max-width:100%;aspect-ratio:9/16;object-fit:contain;background:#17130f;border:1px solid #b18a45;box-shadow:0 18px 50px #0005}
+.video-hero-copy .eyebrow{color:#e4c78d}
+.video-hero-copy h1{font-size:clamp(34px,4.4vw,58px);font-weight:normal;line-height:1.08;margin:0 0 18px}
+.video-hero-copy p{font:15px/1.8 Arial,sans-serif;color:#e5d9c7;max-width:480px;margin:0 0 25px}
+.video-hero-copy .primary{background:linear-gradient(135deg,#c49a4d,#9b702d)}
+.video-gallery{max-width:1200px;margin:0 auto;padding:64px 24px 30px}
+.video-gallery-head{text-align:center;margin-bottom:30px}
+.video-gallery-head .eyebrow{margin-bottom:12px}
+.video-gallery-head h2{font-size:34px;font-weight:normal;margin:0}
+.video-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.video-card{background:#fffefa;border:1px solid var(--line);padding:10px;box-shadow:0 10px 30px #4b3b240b}
+.video-card video{display:block;width:100%;aspect-ratio:9/16;object-fit:contain;background:#211b14}
+.video-card p{font:12px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;text-align:center;color:#78664d;margin:12px 0 5px}
+@media(max-width:760px){
+ .video-hero{padding:25px 18px}
+ .video-hero-inner{grid-template-columns:1fr;gap:24px}
+ .video-hero-media{height:390px;order:0}
+ .video-hero-copy{text-align:center;order:1}
+ .video-hero-copy p{margin-left:auto;margin-right:auto}
+ .video-gallery{padding:48px 16px 20px}
+ .video-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+}
+@media(max-width:430px){.video-gallery-grid{grid-template-columns:1fr 1fr}.video-card{padding:6px}}
+
+</style>
+</head>
+<body>
+<div class="topline">Для замовлення пишіть сюди: <a href="https://t.me/ylianna_ELFBAR" target="_blank" rel="noopener">✈ Telegram @ylianna_ELFBAR</a> <span class="topline-extra">• Відповімо на всі запитання</span></div>
+<header class="header"><nav class="nav">
+<a class="brand" href="#">Медичне <span>Золото</span></a>
+<div class="links"><a href="#catalog">Каталог</a><a href="#about">Про нас</a><a href="#delivery">Доставка</a></div>
+<a class="telegram-top" href="https://t.me/ylianna_ELFBAR" target="_blank" rel="noopener">✈ Для замовлення пишіть сюди</a><button class="cartbtn" onclick="toggleCart(true)">КОШИК <span class="cartcount" id="count">(0)</span></button>
+</nav></header>
+<main>
+
+<section class="video-hero" aria-label="Відео прикрас Медичне Золото">
+  <div class="video-hero-inner">
+    <div class="video-hero-media">
+      <video src="videos/jewel-video-1.mp4" poster="images/video-posters/video-1.jpg"
+             autoplay muted loop playsinline controls preload="metadata"
+             aria-label="Відео прикраси крупним планом"></video>
+    </div>
+    <div class="video-hero-copy">
+      <div class="eyebrow">Медичне Золото • прикраси наживо</div>
+      <h1>Роздивись красу в кожній деталі</h1>
+      <p>Живі відео прикрас, щоб побачити блиск, форму та деталі зблизька. Обирай свою улюблену прикрасу та пиши нам у Telegram для замовлення й консультації.</p>
+      <a class="primary" href="https://t.me/ylianna_ELFBAR" target="_blank" rel="noopener">Для замовлення пишіть сюди</a>
+    </div>
+  </div>
+</section>
+
+<section class="hero-banner" aria-label="Медичне Золото — стиль, якість, краса">
+<a href="#catalog" aria-label="Перейти до каталогу прикрас">
+<img src="images/brand-banner.png" alt="Медичне Золото — прикраси, стиль, якість і краса">
+</a>
+</section>
+
+<section class="video-gallery" aria-label="Відеоогляд прикрас">
+  <div class="video-gallery-head">
+    <div class="eyebrow">Ближче до деталей</div>
+    <h2>Прикраси у відео</h2>
+    <p class="intro">Натисни відтворення, щоб роздивитися прикраси. Звук можна ввімкнути у програвачі.</p>
+  </div>
+  <div class="video-gallery-grid">
+    <div class="video-card">
+      <video src="videos/jewel-video-2.mp4" poster="images/video-posters/video-2.jpg" controls playsinline preload="metadata"></video>
+      <p>Браслети</p>
+    </div>
+    <div class="video-card">
+      <video src="videos/jewel-video-3.mp4" poster="images/video-posters/video-3.jpg" controls playsinline preload="metadata"></video>
+      <p>Золоті каблучки</p>
+    </div>
+    <div class="video-card">
+      <video src="videos/jewel-video-4.mp4" poster="images/video-posters/video-4.jpg" controls playsinline preload="metadata"></video>
+      <p>Прикраси зблизька</p>
+    </div>
+
+    <div class="video-card">
+      <video src="videos/jewel-video-5.mp4" poster="images/video-posters/video-5.jpg" controls playsinline preload="metadata"></video>
+      <p>Прикраси крупним планом</p>
+    </div>
+    <div class="video-card">
+      <video src="videos/jewel-video-6.mp4" poster="images/video-posters/video-6.jpg" controls playsinline preload="metadata"></video>
+      <p>Деталі та блиск</p>
+    </div>
+    <div class="video-card">
+      <video src="videos/jewel-video-7.mp4" poster="images/video-posters/video-7.jpg" controls playsinline preload="metadata"></video>
+      <p>Колекція прикрас</p>
+    </div>
+    <div class="video-card">
+      <video src="videos/jewel-video-8.mp4" poster="images/video-posters/video-8.jpg" controls playsinline preload="metadata"></video>
+      <p>Ще більше краси</p>
+    </div>
+
+    <div class="video-card">
+      <video src="videos/jewel-video-9.mp4" poster="images/video-posters/video-9.jpg" controls playsinline preload="metadata"></video>
+      <p>Нові прикраси</p>
+    </div>
+    <div class="video-card">
+      <video src="videos/jewel-video-10.mp4" poster="images/video-posters/video-10.jpg" controls playsinline preload="metadata"></video>
+      <p>Блиск деталей</p>
+    </div>
+    <div class="video-card">
+      <video src="videos/jewel-video-11.mp4" poster="images/video-posters/video-11.jpg" controls playsinline preload="metadata"></video>
+      <p>Прикраси зблизька</p>
+    </div>
+    <div class="video-card">
+      <video src="videos/jewel-video-12.mp4" poster="images/video-posters/video-12.jpg" controls playsinline preload="metadata"></video>
+      <p>Ще більше краси</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="catalog"><div class="section-head"><div class="eyebrow">Обери свою прикрасу</div><h2>Каталог прикрас</h2><p class="intro">Лаконічні акценти, які доповнять будь-який образ.</p></div>
+<div class="categories"><button class="chip active" data-cat="all">Усі прикраси</button><button class="chip" data-cat="Сережки">Сережки</button><button class="chip" data-cat="Кольє">Кольє</button><button class="chip" data-cat="Каблучки">Каблучки</button><button class="chip" data-cat="Браслети">Браслети</button><button class="chip" data-cat="Комплекти">Комплекти</button></div>
+<div class="grid" id="products"></div>
+<p class="notice" style="text-align:center;margin-top:20px">Ціни вказані як приклад і можуть бути змінені перед публікацією.. Замініть їх на власний асортимент перед запуском продажів.</p>
+</section>
+<section class="features" id="delivery">
+<div class="feature"><div class="symbol">✧</div><h3>Стиль на кожен день</h3><p>Прикраси, що легко поєднуються з твоїм гардеробом.</p></div>
+<div class="feature"><div class="symbol">◇</div><h3>Увага до деталей</h3><p>Допоможемо підібрати прикрасу для себе або на подарунок.</p></div>
+<div class="feature"><div class="symbol">♡</div><h3>Зручне замовлення</h3><p>Додай товари в кошик, а готове замовлення надішли нам у Telegram.</p></div>
+</section>
+<section class="section about" id="about"><div class="about-art"><div class="big-ring"></div></div><div><div class="eyebrow">Медичне Золото</div><h2>Маленькі деталі. Велике враження.</h2><p>Ми віримо, що прикраси — це спосіб виразити себе. Обирай лаконічні форми, делікатний блиск і деталі, які пасують саме тобі.</p><p><b>Важливо:</b> перед публікацією додайте точний склад покриття, матеріал основи та рекомендації з догляду для кожного виробу. Не вказуйте медичні або гіпоалергенні властивості без підтвердження виробника.</p></div></section>
+</main>
+<footer class="footer"><a class="brand" href="#">Медичне <span>Золото</span></a><p>Прикраси, що підкреслюють твою індивідуальність.</p><p class="contact-note">Потрібна допомога з вибором, розміром, наявністю, оплатою чи доставкою? Напиши нам — із радістю відповімо на всі запитання та допоможемо оформити замовлення.</p><a class="telegram-link" href="https://t.me/ylianna_ELFBAR" target="_blank" rel="noopener">✈ Написати в Telegram @ylianna_ELFBAR</a><p class="contact-note">Замовлення та всі консультації — у Telegram.</p><small>© 2026 Медичне Золото. Усі права захищені.</small></footer>
+<div class="overlay" id="overlay" onclick="if(event.target===this)toggleCart(false)"><aside class="drawer"><div class="drawer-head"><h2>Твій кошик</h2><button class="close" onclick="toggleCart(false)">×</button></div><div id="cartitems"></div><div class="total"><span>Разом</span><b id="total">0 ₴</b></div><button class="checkout" onclick="showForm()">Оформити замовлення</button>
+<div class="form" id="orderform"><h3>Дані для замовлення</h3><label>Ім’я</label><input id="customer" placeholder="Як до вас звертатися?"><label>Телефон</label><input id="phone" placeholder="+380..." inputmode="tel"><label>Місто та відділення / адреса</label><input id="address" placeholder="Місто, номер відділення або адреса"><label>Коментар</label><textarea id="comment" placeholder="Побажання до замовлення (необов’язково)"></textarea><button class="checkout" style="margin-top:15px" onclick="makeOrder()">Підготувати замовлення</button><p class="notice">Після підготовки замовлення натисніть кнопку нижче — Telegram відкриється з готовим повідомленням. Перевірте його та натисніть «Надіслати».</p><textarea id="ordertext" readonly style="display:none;margin-top:12px"></textarea><a id="sendtelegram" class="telegram-link order-telegram" href="https://t.me/ylianna_ELFBAR" target="_blank" rel="noopener">✈ Надіслати замовлення в Telegram</a><button id="copybtn" class="add" style="display:none;margin-top:10px" onclick="copyOrder()">Скопіювати текст замовлення</button></div>
+</aside></div>
+<script>
+const products=[
+{id:1,name:'Ланцюжок «Візерунок»',cat:'Кольє',price:790,desc:'Довжина 60 см • ширина 0,35 см',image:'images/chain.jpg',tag:'Новинка'},
+{id:2,name:'Комплект «Геометрія»',cat:'Комплекти',price:1290,desc:'Сережки та каблучка • декоративні вставки',image:'images/set-greek.jpg',tag:'Бестселер'},
+{id:3,name:'Комплект «Ажур»',cat:'Комплекти',price:1190,desc:'Витончений ажурний візерунок',image:'images/set-filigree.jpg',tag:''},
+{id:4,name:'Комплект «Рубінове сяйво»',cat:'Комплекти',price:1390,desc:'Червоний камінь у золотистій оправі',image:'images/set-red-oval.jpg',tag:''},
+{id:5,name:'Комплект «Червоний акцент»',cat:'Комплекти',price:1290,desc:'Овальні червоні вставки та прозорі камінці',image:'images/set-red-classic.jpg',tag:''},
+{id:6,name:'Комплект «Орнамент»',cat:'Комплекти',price:1190,desc:'Декоративний візерунок із прозорими вставками',image:'images/set-ornate.jpg',tag:''},
+{id:7,name:'Комплект «Крапля світла»',cat:'Комплекти',price:990,desc:'Лаконічний дизайн із прозорим камінцем',image:'images/set-solitaire.jpg',tag:''},
+{id:8,name:'Комплект «Кристал»',cat:'Комплекти',price:1390,desc:'Прозорі квадратні вставки',image:'images/set-clear-square.jpg',tag:''},
+{id:9,name:'Комплект «Шарм»',cat:'Комплекти',price:1290,desc:'Геометричний дизайн із блискучою окантовкою',image:'images/set-rectangular.jpg',tag:''},
+{id:10,name:'Комплект «Смарагд»',cat:'Комплекти',price:1490,desc:'Зелений центральний камінь та ажурна оправа',image:'images/set-green.jpg',tag:'Новинка'}
+];
+let cart=[];
+const money=n=>new Intl.NumberFormat('uk-UA').format(n)+' ₴';
+function renderProducts(cat='all'){document.getElementById('products').innerHTML=products.filter(p=>cat==='all'||p.cat===cat).map(p=>`<article class="product"><div class="product-art"><span class="tag">${p.tag||'Колекція'}</span><img class="product-photo" src="${p.image}" alt="${p.name}" loading="lazy"></div><div class="product-info"><h3>${p.name}</h3><p>${p.desc}</p><div class="product-bottom"><span class="price">${money(p.price)}</span><button class="add" onclick="addToCart(${p.id})">До кошика</button></div></div></article>`).join('')}
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderProducts(b.dataset.cat)}));
+function addToCart(id){let item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});renderCart();toggleCart(true)}
+function renderCart(){document.getElementById('count').textContent='('+cart.reduce((s,x)=>s+x.qty,0)+')';document.getElementById('cartitems').innerHTML=cart.length?cart.map(x=>{let p=products.find(y=>y.id===x.id);return `<div class="cart-item"><div><b>${p.name}</b><br>${money(p.price)} × ${x.qty}</div><div><b>${money(p.price*x.qty)}</b><br><button onclick="changeQty(${p.id},-1)">−</button>　<button onclick="changeQty(${p.id},1)">+</button>　<button onclick="removeItem(${p.id})">Видалити</button></div></div>`}).join(''):'<div class="empty">Кошик поки порожній. Обери прикрасу з каталогу.</div>';document.getElementById('total').textContent=money(cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0))}
+function changeQty(id,n){let x=cart.find(y=>y.id===id);if(x)x.qty+=n;cart=cart.filter(y=>y.qty>0);renderCart()}
+function removeItem(id){cart=cart.filter(x=>x.id!==id);renderCart()}
+function toggleCart(open){document.getElementById('overlay').classList.toggle('open',open)}
+function showForm(){if(!cart.length){alert('Спочатку додайте товар у кошик.');return}document.getElementById('orderform').classList.add('show')}
+function makeOrder(){let name=document.getElementById('customer').value.trim(),phone=document.getElementById('phone').value.trim(),address=document.getElementById('address').value.trim();if(!name||!phone||!address){alert('Заповніть, будь ласка, ім’я, телефон і адресу.');return}let lines=cart.map(x=>{let p=products.find(y=>y.id===x.id);return `${p.name} — ${x.qty} шт. — ${money(p.price*x.qty)}`}).join('\\n');let msg=`ЗАМОВЛЕННЯ — Медичне Золото\\n\\n${lines}\\n\\nРазом: ${money(cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0))}\\n\\nІм’я: ${name}\\nТелефон: ${phone}\\nАдреса: ${address}\\nКоментар: ${document.getElementById('comment').value.trim()||'—'}`;let area=document.getElementById('ordertext');area.value=msg;area.style.display='block';document.getElementById('copybtn').style.display='inline-block';let tg=document.getElementById('sendtelegram');tg.href='https://t.me/ylianna_ELFBAR?text='+encodeURIComponent(msg);tg.style.display='inline-flex'}
+function copyOrder(){let a=document.getElementById('ordertext');a.select();a.setSelectionRange(0,99999);navigator.clipboard?.writeText(a.value).then(()=>alert('Текст замовлення скопійовано. Надішліть його продавцю.')).catch(()=>alert('Виділіть і скопіюйте текст замовлення вручну.'))}
+renderProducts();renderCart();
+</script>
+</body></html>
